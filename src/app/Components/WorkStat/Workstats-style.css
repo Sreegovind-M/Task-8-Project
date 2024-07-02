@@ -1,0 +1,28 @@
+.counter-section {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  padding: 2%;
+  background: linear-gradient(45deg, #684cb1, #0ed5fa, #0ed5fa, #684cb1);
+  position: relative;
+  top: 5rem;
+}
+
+.counter-numbers{
+    font-size: 9vh;
+    margin: 0;
+}
+.counter-section p {
+    font-weight: bold;
+    margin: 8px;
+}
+.counter-section div{
+    width: 240px;
+    height: fit-content;
+}

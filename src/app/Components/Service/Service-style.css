@@ -1,0 +1,112 @@
+.service-section {
+  background-color: #1f242c;
+  margin: auto;
+  padding: 15vh 0;
+  color: white;
+}
+.service-header {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-title span {
+  color: rgb(67, 186, 255);
+  font-weight: bold;
+}
+.service-title h1 {
+  margin: 5px 0;
+  font-size: 7vh;
+}
+
+.service-box button {
+  padding: 1rem;
+  font-weight: bold;
+  background-color: #1f242c;
+  border: 2px solid #262c35;
+  cursor: pointer;
+  border-radius: 0.7rem;
+  color: white;
+  font-size: 2vh;
+  letter-spacing: 1px;
+}
+
+.service-box button:hover {
+  background-position: 100% 100%;
+  background-size: 300% 100%;
+  background-image: linear-gradient(90deg, #684cb1, #0ed5fa, #0ed5fa, #684cb1);
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2vh;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.service-grid {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 5vh auto;
+  align-items: center;
+}
+.service-grid div {
+  width: 35vh;
+  padding: 6vh 4vh;
+  background-color: rgb(38, 44, 53);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+.service-grid div:hover {
+  border-image: linear-gradient(90deg, #684cb1, #0ed5fa, #0ed5fa, #684cb1) 1;
+}
+
+.seo,
+.server,
+.ui,
+.ana {
+  margin-bottom: 20px;
+}
+
+.service-grid h2 {
+  margin: 15px 0px;
+}
+
+.service-grid p {
+  opacity: 0.6;
+  margin: 20px 0;
+  font-weight: lighter;
+}
+
+.service-grid span {
+  opacity: 0.4;
+  font-weight: lighter;
+}
+
+@media (width: 1024px) {
+  .service-grid div {
+    width: 60vh;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .service-grid div {
+    width: 40vh;
+  }
+}
+@media (max-width: 768px){
+  .service-grid div {
+    width: 100%;
+  }
+  .service-title h1 {
+    font-size: 5vh;
+  }
+  .service-box {
+    display: none;
+  }
+}
+
+

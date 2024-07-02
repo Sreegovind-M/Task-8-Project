@@ -1,0 +1,111 @@
+.customer-experience-section {
+  background-image: url(../../Images/cust-exp-img.png);
+  background-repeat: no-repeat;
+  padding: 10vh 0;
+}
+.cust-body {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cust-exp-img{
+    width: 90vh;
+    height: 60vh;
+}
+
+.cust-title h1 {
+  font-size: 7vh;
+  margin: 10px 0;
+}
+
+.cust-title span {
+  color: #008cff;
+  font-weight: bold;
+}
+
+.cust-header{
+    width: 40%;
+}
+
+.skill-prog{
+    display: flex;
+    flex-direction: column;
+    gap: 1cm;
+    margin-top: 20px;
+}
+
+.skill-bar-1{
+    width: 30vh;
+    background-color: #008cff;
+    height: 8px;
+    margin: 8px 0;
+}
+
+.skill-bar-2{
+    width: 50vh;
+    background-color: #008cff;
+    height: 8px;
+    margin: 8px 0;
+}
+
+.skill-bar-3{
+    width: 35vh;
+    background-color: #008cff;
+    height: 8px;
+    margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+    .cust-body{
+        flex-direction: column;
+    }
+    .cust-header{
+        width: 100%;
+    }
+    .cust-exp-img{
+        width: 100%;
+        height: 100%;
+    }
+    .exp-img{
+        margin-top: 40px;
+    }
+    .skill-prog{
+        gap: 0.5cm;
+    }
+    .skill-bar-1 {
+        width: 20vh;
+    }
+    .skill-bar-2 {
+        width: 40vh;
+    }
+    .skill-bar-3 {
+        width: 25vh;
+    }
+    .cust-title h1 {
+        font-size: 4vh;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px){
+    .skill-bar-1{
+        width: 60vh;
+    }
+    .skill-bar-2{
+        width: 80vh;
+    }
+    .skill-bar-3{
+        width: 70vh;
+    }
+}
+
+@media (width: 1024px) {
+    .cust-exp-img{
+        width: 80vh;
+        height: 70vh;
+    }
+
+}

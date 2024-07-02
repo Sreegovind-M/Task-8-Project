@@ -1,0 +1,296 @@
+.header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Top Header section  */
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.title-img {
+  width: 33vh;
+}
+.header-menu-section {
+  display: flex;
+  align-items: center;
+}
+.nav-contact {
+  display: flex;
+}
+.nav-contact-info {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+}
+.contact-info p,
+h4 {
+  margin: 3px;
+}
+.contact-img {
+  margin-right: 5px;
+}
+.appointment-box button {
+  padding: 1rem;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #f2f2f2;
+  cursor: pointer;
+  border-radius: 0.7rem;
+}
+
+.appointment-box button:hover {
+  background-position: 100% 100%;
+  background-size: 300% 100%;
+  background-image: linear-gradient(90deg, #684cb1, #0ed5fa, #0ed5fa, #684cb1);
+  color: white;
+  border: 2px solid white;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+/* Navigation bar section  */
+
+.navigation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.menu-dot-box {
+  padding: 1em;
+  background-color: #ebebeb;
+  height: max-content;
+  cursor: pointer;
+}
+
+.search-box {
+  padding: 1em;
+  background-image: linear-gradient(0deg, #0bdafd, #6a48af);
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1cm;
+  font-weight: bold;
+}
+
+.nav-bar a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1f242c;
+}
+
+.nav-bar a:hover {
+  color: #008cff;
+}
+
+.menu-dots {
+  height: 30px;
+  width: 30px;
+}
+.search-img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Responsive navbar  */
+
+.sidenav {
+  background: #ffffff none repeat scroll 0 0;
+  border-left: 3px solid #43baff;
+  position: fixed;
+  width: 370px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+  z-index: 999;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+  background-color: #1a1e25;
+}
+
+.sidenavbar-close {
+  display: none;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+.sidenav-close button {
+  color: #ffffff;
+  height: 45px;
+  width: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-image: -webkit-linear-gradient(0deg, #0bdafd, #6a48af);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidenav-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #1f242c;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.sidenav-searchbox {
+  display: flex;
+  border-bottom: 2px solid #1f242c;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.search-btn {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.sidenav-menu {
+  display: block !important;
+}
+
+.sidenav-menu ul li {
+  color: #ffffff;
+  cursor: pointer;
+  border-bottom: 1px solid #1f242c;
+  list-style: none;
+}
+
+.sidenav-menu ul li a {
+  padding: 12px 0;
+  display: block;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.sidenav-contact-info {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.sidenav-contact-info h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.center-align {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.sidenav-contact-info ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contactinfo-icon {
+  margin-right: 20px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.contactinfo-text a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.contactinfo-text a:hover {
+  color: #43baff;
+}
+
+.sidenav-socialmedia ul li {
+  display: inline-block;
+}
+.sidenav-socialmedia ul li:not(:last-child) {
+  margin-right: 5px;
+}
+.sidenav-socialmedia ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1a1e25;
+  color: #43baff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 767px) {
+  .header-menu-section {
+    display: none;
+  }
+  .toggle-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .navigation-section {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-menu-section {
+    display: none;
+  }
+  .toggle-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .navigation-section {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .sidenav {
+    width: 300px;
+  }
+}

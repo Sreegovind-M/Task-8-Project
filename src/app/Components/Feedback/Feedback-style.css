@@ -1,0 +1,70 @@
+.feedback-section {
+  background-image: url(../../Images/cust-exp-img.png);
+  background-repeat: no-repeat;
+  padding: 15vh 0;
+}
+.feedback-title {
+  text-align: center;
+}
+.feedback-title span {
+  color: #008cff;
+  font-weight: bold;
+}
+.feedback-title h1 {
+  font-size: 7vh;
+  margin: 10px 0;
+  color: #1f242c;
+}
+
+.feedback-container {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-content {
+  width: 40vh;
+  height: fit-content;
+  padding: 5vh;
+  background-color: white;
+  color: #777;
+  font-size: 2.3vh;
+}
+
+.box-user {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+  align-items: center;
+}
+
+.user-info p {
+  margin-left: 3px;
+  opacity: 0.6;
+}
+
+.feed-img {
+  width: 5vh;
+  height: 5vh;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .feedback-box3 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .feedback-box3,
+  .feedback-box2 {
+    display: none;
+  }
+  .feedback-title h1 {
+    font-size: 5vh;
+  }
+  .feedback-container{
+    justify-content: center;
+  }
+}

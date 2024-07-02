@@ -1,0 +1,132 @@
+.about-us-section {
+  margin: 5rem auto;
+  max-width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+}
+
+.experience-box {
+  background-color: #1f242c;
+  padding: 5vh 3vh;
+  width: fit-content;
+  color: white;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  border-radius: 6px;
+}
+.experience-box h1 {
+  margin: 0;
+  font-size: 9vh;
+}
+
+.experience-box p {
+  margin: 3px 0 0 0;
+}
+
+.aboutus-img {
+  position: relative;
+  left: 8vh;
+  top: 5vh;
+}
+
+.about-us-words h1 {
+  font-size: 7vh;
+  margin: 20px 0;
+  color: #1f242c;
+}
+
+.about-us-title span {
+  color: #008cff;
+  font-weight: bold;
+}
+
+.about-us-descrip p {
+  opacity: 0.5;
+  line-height: 1.5rem;
+}
+
+.about-us-quote {
+  position: relative;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+.about-us-quote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1vh;
+  background-color: #008cff;
+}
+
+.about-us-quote h4 {
+  color: #1f242c;
+}
+.about-us-quote span {
+  opacity: 0.5;
+}
+
+.about-us-quote h4 {
+  margin-top: 3px;
+  color: #1f242c;
+}
+
+.learn-more button {
+  padding: 1rem;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #f2f2f2;
+  cursor: pointer;
+  border-radius: 0.7rem;
+}
+
+.learn-more button:hover {
+  background-position: 100% 100%;
+  background-size: 300% 100%;
+  background-image: linear-gradient(90deg, #684cb1, #0ed5fa, #0ed5fa, #684cb1);
+  color: white;
+  border: 2px solid white;
+}
+
+@media (width: 1024px) {
+  .aboutus-img {
+    left: 0;
+    bottom: 0;
+  }
+  .about-us-section {
+    gap: 10%;
+  }
+  .about-us-title h1 {
+    font-size: 4vh;
+  }
+}
+
+@media (max-width: 767px) {
+    .about-us-section{
+        flex-direction: column;
+    }
+    .aboutus-img{
+        width: 100%;
+        height: 50vh;
+        left: 0;
+        right: 0;
+    }
+    .about-imgs{
+        margin-bottom: 100px;
+    }
+    .about-us-title h1 {
+        font-size: 5vh;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .about-us-section{
+        flex-direction: column;
+    }
+    .about-imgs{
+        margin-bottom: 100px;
+    }
+}

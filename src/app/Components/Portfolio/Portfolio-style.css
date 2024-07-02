@@ -1,0 +1,126 @@
+.portfolio-section {
+  margin: 0 auto;
+  padding: 15vh 0;
+}
+.port-header {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.port-title h1 {
+  font-size: 7vh;
+}
+
+.port-title span {
+  color: #008cff;
+  font-weight: bold;
+}
+
+.arrow-toggle {
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid rgb(235, 239, 243);
+}
+
+.arrow-toggle button {
+  padding: 10px;
+  margin: 0 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.arrow-toggle button:hover {
+  background-color: #008cff;
+  color: white;
+}
+
+.port-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 0;
+}
+.cyber-img{
+    background-image: url(../../Images/cyber.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38vh;
+    height: 60vh;
+}
+.cyber {
+    background-color: #c8ced4;
+    text-align: center;
+    cursor: pointer;
+}
+.ps-img{
+    background-image: url(../../Images/prob-sol.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 342px;
+    height: 60vh;
+}
+.prob-sol {
+    background-color: #c8ced4;
+    text-align: center;
+    cursor: pointer;
+}
+.web-img{
+    background-image: url(../../Images/web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 342px;
+    height: 60vh;
+}
+.web {
+    background-color: #c8ced4;
+    text-align: center;
+    cursor: pointer;
+}
+.pa-img{
+    background-image: url(../../Images/prod-ana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38vh;
+    height: 60vh;
+}
+.prod-ana {
+    background-color: #c8ced4;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) and (min-width: 950px) {
+    .prod-ana{
+        display: none;
+    }
+}
+
+@media (max-width: 949px) and (min-width: 500px) {
+    .prod-ana{
+        display: none;
+    }
+    .web{
+        display: none;
+    }
+   
+}
+
+@media (max-width: 499px) {
+    .prod-ana, .web, .prob-sol{
+        display: none;
+    }
+    .port-body{
+        justify-content: center;
+    }
+    .arrow-toggle{
+        display: none;
+    }
+    .port-title h1 {
+        font-size: 5vh;
+    }
+}
