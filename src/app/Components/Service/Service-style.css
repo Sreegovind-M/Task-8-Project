@@ -1,7 +1,7 @@
 .service-section {
   background-color: #1f242c;
   margin: auto;
-  padding: 15vh 0;
+  padding: 25vh 0 15vh 0;
   color: white;
 }
 .service-header {
@@ -12,7 +12,7 @@
   align-items: center;
 }
 .service-title span {
-  color: rgb(67, 186, 255);
+  color: #43baff;
   font-weight: bold;
 }
 .service-title h1 {
@@ -40,6 +40,7 @@
   letter-spacing: 1px;
   font-size: 2vh;
   border: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.5s;
 }
 
 .service-grid {
@@ -53,9 +54,9 @@
   align-items: center;
 }
 .service-grid div {
-  width: 35vh;
+  width: 40vh;
   padding: 6vh 4vh;
-  background-color: rgb(38, 44, 53);
+  background-color: #262c35;
   border-radius: 5px;
   cursor: pointer;
   border: 3px solid transparent;
@@ -86,18 +87,26 @@
   font-weight: lighter;
 }
 
+.service-box span {
+  background-color: #43baff;
+  color: white;
+  padding: 0.8vh 1.3vh;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
 @media (width: 1024px) {
   .service-grid div {
     width: 60vh;
   }
 }
 
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .service-grid div {
-    width: 40vh;
+    width: 50vh;
   }
 }
-@media (max-width: 768px){
+@media (max-width: 767px) {
   .service-grid div {
     width: 100%;
   }
@@ -108,5 +117,3 @@
     display: none;
   }
 }
-
-

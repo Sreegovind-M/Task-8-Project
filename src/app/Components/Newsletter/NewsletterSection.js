@@ -14,7 +14,7 @@ const NewsletterSection = () => {
             <form>
               <input
                 type="email"
-                id="email"
+                id="news-in"
                 name="email"
                 placeholder="Email address"
               />

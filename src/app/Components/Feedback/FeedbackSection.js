@@ -12,7 +12,7 @@ const FeedbackSection = () => {
           <h1>User feedbacks</h1>
         </div>
         <div className="feedback-container">
-          <div className="feedback-box1">
+          <div className="feedback-box">
             <div className="box-content">
               <p>
                 "The worlds #1 web data platform from data collection
@@ -28,7 +28,7 @@ const FeedbackSection = () => {
               </div>
             </div>
           </div>
-          <div className="feedback-box2">
+          <div className="feedback-box-2">
             <div className="box-content">
               <p>
                 "The worlds #2 web data platform from data collection
@@ -44,7 +44,7 @@ const FeedbackSection = () => {
               </div>
             </div>
           </div>
-          <div className="feedback-box3">
+          <div className="feedback-box-3">
             <div className="box-content">
               <p>
                 "The worlds #3 web data platform from data collection

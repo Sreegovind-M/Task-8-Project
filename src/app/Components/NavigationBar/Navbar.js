@@ -5,7 +5,7 @@ import title2 from "./../../Images/title-2.png";
 import phone from "./../../Images/phone.png";
 import mail from "./../../Images/mail.png";
 import menuBar from "./../../Images/menu-bar.png";
-import menuDots from "./../../Images/menu-dots.png";
+import menuDots from "./../../Images/menu-dots.svg";
 import search from "./../../Images/search-2.png";
 import location from "../../Images/location.png";
 import maili from "../../Images/maili.png";
@@ -27,43 +27,81 @@ const Navbar = () => {
   return (
     <div>
       <header className="header-section">
-        {/* Top Header start  */}
+        {/* Top Bar section start  */}
 
-        <div className="top-header">
-          <a>
-            <Image src={title} className="title-img"></Image>
-          </a>
-          <div className="header-menu-section">
-            <div className="nav-contact">
-              <div className="nav-contact-info">
-                <div className="contact-img">
-                  <Image src={phone}></Image>
-                </div>
-                <div className="contact-info">
-                  <p>Call us now</p>
-                  <h4>9876543210</h4>
-                </div>
-              </div>
-
-              <div className="nav-contact-info">
-                <div className="contact-img">
-                  <Image src={mail}></Image>
-                </div>
-                <div className="contact-info">
-                  <p>Email Address</p>
-                  <h4>info@gmail.com</h4>
-                </div>
-              </div>
+        <div className="top-bar">
+          <div className="top-bar-body">
+            <div className="top-link">
+              <a href="" id="faq">
+                Faq
+              </a>
+              <a href="">Case</a>
             </div>
-            <div className="appointment-box">
-              <button>GET APPOINTMENT</button>
+            <div class="top-endlink">
+              <span className="top-sm">
+                <a href="">
+                  <b>F</b>
+                </a>
+                <a href="">
+                  <b>T</b>
+                </a>
+                <a href="">
+                  <b>Be</b>
+                </a>
+                <a href="">
+                  <b>Y</b>
+                </a>
+                <a href="">
+                  <b>In</b>
+                </a>
+              </span>
+              <button>English &darr;</button>
             </div>
           </div>
-          <Image
-            src={menuBar}
-            className="toggle-menu"
-            onClick={openNav}
-          ></Image>
+        </div>
+
+        {/* Top Bar section end  */}
+
+        {/* Top Header start  */}
+        <div className="top-header-wrap">
+          <div className="top-header">
+            <a>
+              <Image src={title} className="title-img"></Image>
+            </a>
+            <div className="header-menu-section">
+              <div className="nav-contact">
+                <div className="nav-contact-info">
+                  <div className="contact-img">
+                    <Image src={phone}></Image>
+                  </div>
+                  <div className="contact-info">
+                    <p>Call us now</p>
+                    <h4>00 211 232 000</h4>
+                  </div>
+                </div>
+
+                <div className="nav-contact-info">
+                  <div className="contact-img">
+                    <Image src={mail}></Image>
+                  </div>
+                  <div className="contact-info">
+                    <p>Email Address</p>
+                    <h4>info@webmail.com</h4>
+                  </div>
+                </div>
+              </div>
+              <div className="appointment-box">
+                <button>
+                  GET APPOINTMENT <span>&gt;</span>
+                </button>
+              </div>
+            </div>
+            <Image
+              src={menuBar}
+              className="toggle-menu"
+              onClick={openNav}
+            ></Image>
+          </div>
         </div>
 
         {/* Top Header end  */}
@@ -77,7 +115,6 @@ const Navbar = () => {
                 <Image src={title2} />
                 <div className="sidenav-close" onClick={closeNav}>
                   <button className="close-btn">&times;</button>
-                  hello
                 </div>
               </div>
               <div className="sidenav-searchbox">
@@ -136,7 +173,7 @@ const Navbar = () => {
                       <Image src={maili} className="icon"></Image>
                     </div>
                     <div className="contactinfo-text">
-                      <a>support@email.com</a>
+                      <a>support@gmail.com</a>
                     </div>
                   </li>
                 </ul>
@@ -164,35 +201,36 @@ const Navbar = () => {
         {/* Responsive navbar end  */}
 
         {/* Navigation-bar section start  */}
-
-        <div className="navigation-section">
-          <div className="menu-dot-box">
-            <Image src={menuDots} className="menu-dots"></Image>
-          </div>
-          <nav className="nav-bar">
-            <ul class="nav-items">
-              <li>
-                <a href="">HOME + </a>
-              </li>
-              <li>
-                <a href="">ABOUT</a>
-              </li>
-              <li>
-                <a href="">SERVICES + </a>
-              </li>
-              <li>
-                <a href="">BLOG + </a>
-              </li>
-              <li>
-                <a href="">PAGES + </a>
-              </li>
-              <li>
-                <a href="">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
-          <div className="search-box">
-            <Image src={search} className="search-img"></Image>
+        <div className="navigation-section-wrap">
+          <div className="navigation-section">
+            <div className="menu-dot-box">
+              <Image src={menuDots} className="menu-dots"></Image>
+            </div>
+            <nav className="nav-bar">
+              <ul className="nav-items">
+                <li>
+                  <a href="">HOME + </a>
+                </li>
+                <li>
+                  <a href="">ABOUT</a>
+                </li>
+                <li>
+                  <a href="">SERVICES + </a>
+                </li>
+                <li>
+                  <a href="">BLOG + </a>
+                </li>
+                <li>
+                  <a href="">PAGES + </a>
+                </li>
+                <li>
+                  <a href="">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+            <div className="search-box">
+              <Image src={search} className="search-img"></Image>
+            </div>
           </div>
         </div>
       </header>

@@ -16,7 +16,7 @@ const Herobody = () => {
               welfare, farm profitablility, product and work efficiency.
             </p>
             <div className="start-box">
-              <button>GET STARTED</button>
+              <button>GET STARTED <span>&gt;</span></button>
               <div className="play-box">
                 <Image src={play} className="play-img"></Image>
                 <h4>INTRO VIDEO</h4>

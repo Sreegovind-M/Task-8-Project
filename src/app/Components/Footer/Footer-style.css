@@ -10,7 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: start;
-  gap: 8vh;
+  gap: 6vh;
 }
 
 .footer-body ul {
@@ -36,7 +36,7 @@
 
 .foot {
   width: 33vh;
-  height: 30vh;
+  height: fit-content;
 }
 
 .foot-2 {
@@ -103,11 +103,20 @@
 }
 
 @media (max-width: 620px) {
-    .footer-bar-content{
-        gap: 10px;
-        justify-content: center;
-    }
-    .bar-nav{
-        font-size: 2vh;
-    }
+  .footer-body {
+    gap: 7vh;
+  }
+  .foot {
+    margin-top: 20px;
+  }
+
+  .footer-bar-content {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-body {
+    gap: 8vh;
+  }
 }

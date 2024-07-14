@@ -17,7 +17,9 @@ const ServiceSection = () => {
             <h1>What we do here</h1>
           </div>
           <div className="service-box">
-            <button>SERVICES</button>
+            <button>
+              SERVICES <span>&gt;</span>
+            </button>
           </div>
         </div>
         <div className="service-options">

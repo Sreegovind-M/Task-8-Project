@@ -12,18 +12,21 @@ const QuerySection = () => {
             <form>
               <input
                 type="email"
-                id="email"
+                id="query-namei"
                 name="email"
                 placeholder="Email address"
+
               />
 
               <input
                 type="name"
-                id="name"
+                id="query-webi"
                 name="name"
                 placeholder="Website name"
               />
-              <button>TEST SPEED</button>
+              <button>
+                TEST SPEED <span>&gt;</span>
+              </button>
             </form>
           </div>
         </div>

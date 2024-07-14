@@ -35,7 +35,9 @@ const Aboutus = () => {
             </h5>
           </div>
           <div className="learn-more">
-            <button>LEARN MORE</button>
+            <button>
+              LEARN MORE <span>&gt;</span>
+            </button>
           </div>
         </div>
       </section>
